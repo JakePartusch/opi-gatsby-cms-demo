@@ -3,11 +3,23 @@ import styled from "styled-components"
 import { Flex, Item } from "react-flex-ready"
 import Container from "components/common/Container"
 import Card from "components/common/Card"
-import { Wrapper, Content } from "./styles"
 import { useStaticQuery, graphql } from "gatsby"
 
 const LogoImg = styled.img`
   height: 50px;
+`
+
+export const Wrapper = styled.div`
+  padding: 2rem 0;
+`
+
+export const Content = styled.div`
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 `
 
 export default () => {

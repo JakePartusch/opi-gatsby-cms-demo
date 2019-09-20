@@ -1,10 +1,28 @@
 import React from "react"
+import styled from "styled-components"
+
 import { Form, withFormik, FastField, ErrorMessage } from "formik"
 import * as Yup from "yup"
 import Button from "components/common/Button"
 import Input from "components/common/Input"
 import colors from "tokens/colors"
-import { Error, Center, InputField } from "./styles"
+
+export const Error = styled.span`
+  color: #ff4136;
+`
+
+export const Center = styled.div`
+  text-align: left;
+
+  h4 {
+    font-weight: normal;
+  }
+`
+
+export const InputField = styled.div`
+  position: relative;
+  margin-bottom: 1rem;
+`
 
 const ContactForm = ({
   setFieldValue,
