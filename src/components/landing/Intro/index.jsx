@@ -34,6 +34,7 @@ export const Details = styled.div`
   @media (max-width: 960px) {
     width: 100%;
     margin-bottom: 2rem;
+    text-align: center;
   }
 
   h1 {
@@ -41,8 +42,9 @@ export const Details = styled.div`
     font-size: 36pt;
     color: #212121;
 
-    @media (max-width: 680px) {
+    @media (max-width: 960px) {
       font-size: 30pt;
+      color: #ddd;
     }
   }
 
@@ -52,8 +54,9 @@ export const Details = styled.div`
     font-weight: normal;
     color: #707070;
 
-    @media (max-width: 680px) {
+    @media (max-width: 960px) {
       font-size: 26pt;
+      color: #333;
     }
   }
 `
